@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    {% endblock %}
+    <title>{% block title %}Mon site Symfony{% endblock %}</title>
+</head>
+
+<body>
+    {% block sidebar %}
+        <ul>
+            <li><a href="/">@</a></li>
+            <li><a href="/accueil">Accueil</a></li>
+            <li><a href="/legal">Mentions légales</a></li>
+            <li><a href="/la-societe">La société</a></li>
+            <li><a href="/ticket">Ticket</a></li>
+        </ul>
+    {% endblock %}
+
+
+    {% block body %}{% endblock %}
+
+    {% block footer%}<p>C'est un footer</p>{% endblock %}
+</body>
+</html>

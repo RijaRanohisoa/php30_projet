@@ -1,0 +1,13 @@
+menu:
+    resource: "@MenuBundle/Controller/"
+    type:     annotation
+    prefix:   /index
+
+website:
+    resource: "@WebsiteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
